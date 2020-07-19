@@ -82,7 +82,7 @@ Engine.update(engine);
 
 function keyPressed() {
  if (keyCode === UP_ARROW) {
-	Matter.Body.applyForce(ball.body,ball.body.position,{x:80,y:-80});
+	Matter.Body.applyForce(ball.body,ball.body.position,{x:70,y:-70});
 	
   }
 }
