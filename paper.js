@@ -1,4 +1,4 @@
-class Ball{
+class Ball  {
     constructor(x,y,radius){
         var options={
             
@@ -6,8 +6,9 @@ class Ball{
             friction:0.6,
             density:0.2
         } 
+        //super(x,y,50,50)
         this.body=Bodies.circle(x,y,radius,options);
-          this.radius=radius;
+         this.radius=radius;
         this.image=loadImage("/paperball.png");                                                                                                                               
         World.add(world,this.body);
 

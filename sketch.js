@@ -4,8 +4,10 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-var box1,box2,box3,ball,ballImage,dustbin;
+//const Constraint= Matter.Constraint
+var box1,box2,box3,ballImage,dustbin;
 var ground;
+var ball;
 
 function preload()
 {
@@ -37,7 +39,7 @@ function setup() {
 	//ball.scale=0.5;
 	
 
-
+	//launcher = new Launcher(ball.body,{x:200,y:100});
 	
 	// packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:10, isStatic:true});
 	// World.add(world, packageBody);
@@ -63,6 +65,7 @@ Engine.update(engine);
 	ground.display();
 	ball.display();
    box1.display();
+   //launcher.display();
 	//box2.display();
     //box3.display();
  
@@ -83,6 +86,14 @@ function keyPressed() {
 	
   }
 }
+
+// function mouseDragged(){
+//     Matter.Body.setPosition(ball.body,{x:mouseX,y:mouseY});
+// }
+
+// function mouseReleased(){
+//     launcher.fly();
+// }
 
 
 
