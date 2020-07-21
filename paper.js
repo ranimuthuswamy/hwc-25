@@ -10,7 +10,7 @@ class Ball  {
         //super(x,y,50,50)
         this.body=Bodies.circle(x,y,(radius-20)/2,options);
          this.radius=radius;
-        this.image=loadImage("/paperball.png");                                                                                                                               
+        this.image=loadImage("./paperball.png");                                                                                                                               
         World.add(world,this.body);
 
     }
