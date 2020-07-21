@@ -31,13 +31,13 @@ function setup() {
 	ground=new Ground(width/2, height-35, width,10);
 	//  groundSprite.shapeColor=color(255)
 
-	box1= new Box(850,210,350,160);
+	
 	//box1.addImage("greendustbin",dustbin);	
 	  //box2= new Box(1000,320,10,80);
 	 //box3= new Box(1120,320,10,80);
-	ball= new Ball(200,300,50);
+	ball= new Ball(200,150,50);
 	//ball.scale=0.5;
-	
+	box1= new Box(1000,350,200,213);
 
 	//launcher = new Launcher(ball.body,{x:200,y:100});
 	
@@ -82,7 +82,7 @@ Engine.update(engine);
 
 function keyPressed() {
  if (keyCode === UP_ARROW) {
-	Matter.Body.applyForce(ball.body,ball.body.position,{x:70,y:-70});
+	Matter.Body.applyForce(ball.body,ball.body.position,{x:130,y:-145});
 	
   }
 }
